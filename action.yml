@@ -1,0 +1,12 @@
+name: 'Get issue type name of Jira issue'
+description: 'There are five issue types; Epic, Story, Task, Sub-task and Bug'
+inputs:
+  issue:  
+    description: 'Issue key'
+    required: true
+outputs:
+  name: 
+    description: 'Issue type name'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
