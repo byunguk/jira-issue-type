@@ -1,5 +1,8 @@
 name: 'Get issue type name of Jira issue'
 description: 'There are five issue types; Epic, Story, Task, Sub-task and Bug'
+branding:
+  icon: 'aperture'  
+  color: 'orange'
 inputs:
   issue:  
     description: 'Issue key'
