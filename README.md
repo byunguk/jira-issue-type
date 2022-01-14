@@ -29,14 +29,14 @@ jobs:
         issue: LLP-689
 
     - name: Transition issue(Story)
-      if: ${{ steps.issuetype.outputs.name == 'Story' }}
+      if: steps.issuetype.outputs.name == 'Story'
       uses: atlassian/gajira-transition@master
       with:
         issue: LLP-689
         transition: 'Done'
 
     - name: Transition issue(Bug)
-      if: ${{ steps.issuetype.outputs.name == 'Bug' }}
+      if: steps.issuetype.outputs.name == 'Bug'
       uses: atlassian/gajira-transition@master
       with:
         issue: LLP-689
